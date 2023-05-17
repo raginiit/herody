@@ -1,13 +1,24 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Layout from "@/component/layout";
-import { Box, height } from "@mui/system";
-import { Button, Grid, Typography } from "@mui/material";
-import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
-import { Subtitles } from "@mui/icons-material";
-import { pink } from "@mui/material/colors";
+import { Box } from "@mui/system";
+import { Button, Grid } from "@mui/material";
+import { brandImages } from "@/static";
+import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
+import AddLocationAltRoundedIcon from "@mui/icons-material/AddLocationAltRounded";
+import WorkHistoryRoundedIcon from "@mui/icons-material/WorkHistoryRounded";
+import DomainAddRoundedIcon from "@mui/icons-material/DomainAddRounded";
+import SendIcon from "@mui/icons-material/Send";
+import BannerMain from "@/container/home/bannerMain";
+import GetStarted from "@/container/home/getStarted";
+
+import AlbumOutlinedIcon from "@mui/icons-material/AlbumOutlined";
+import BusinessWork from "@/container/home/businessWork";
+import CompanyExperienced from "@/container/home/companyExperienced";
+import GigworkersBrands from "@/container/home/gigworkersBrands";
+import BrandTrust from "@/container/home/brandTrust";
+import DownloadMedia from "../container/home/downloadMedia"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,478 +29,232 @@ export default function Home() {
         <title>Herody</title>
       </Head>
       <Layout>
-        <Box className="mainBg">
+        <BannerMain />
+        <GetStarted />
+
+        <BusinessWork />
+        <CompanyExperienced />
+        <GigworkersBrands />
+        <BrandTrust/>
+        <DownloadMedia />
+
+ 
+
+ 
+        {/* <Box
+          sx={{
+            height: 800,
+            color: "#0b1460",
+            backgroundColor: "#f0f4ff",
+            paddingTop: 5,
+            marginTop: 15,
+          }}
+        >
+          <h1 style={{ textAlign: "center" }}>
+            <h2>Brands that trust us</h2>
+          </h1>
           <Grid
             container
             direction="row"
             justifyContent="center"
             alignItems="center"
-            spacing={3}
-            sx={{ marginTop: 10 }}
+            sx={{ marginTop: 5, padding: 5 }}
           >
-            <Grid item xs={6} sx={{ color: "#0b1460" }}>
-              <h1>
-                <h1>
-                  We Are The
-                  <br /> Future Of Work
-                </h1>
-              </h1>
-              <h3>
-                Work with us! <br />
-                Complete Internships, Gigs, and projects on the Go.
-              </h3>
-              <h3>For Gigworkers/ Students</h3>
-              <Box>
-                <Button
-                  color="secondary"
-                  variant="contained"
-                  sx={{ backgroundColor: "blue", color: "white" }}
-                >
-                  Join Now <ArrowForwardSharpIcon />
-                </Button>
-              </Box>
-            </Grid>
-            <Grid item xs={6} sx={{ marginTop: 10 }}>
+            <Grid xs={2} sx={{ justifyContent: "space-between" }}>
               <Image
-                src="/images/img-hero.png"
-                height={600}
-                width={600}
+                src="/images/tata_1mg_logo (1).svg"
+                height={50}
+                width={170}
                 alt="logo"
               />
             </Grid>
-          </Grid>
-        </Box>
-        <Grid
-          container
-          direction="column"
-          justifyContent="centre"
-          alignItems="center"
-        >
-          <Grid item xs={12} sx={{ color: "#0b1460", height: 80 }}>
-            <Button>
-              <h3>For Businesses</h3>
-            </Button>
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item xs={12} sx={{ color: "#0b1460", height: 100 }}>
-            <h1>
-              <h1>
-                {" "}
-                Get Your Work Done With
-                <br /> Us
+            <Grid xs={2}>
+              <Image
+                src="/guvi-logo-svg-2x-1-300-1.png"
+                height={50}
+                width={170}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/images/stocktwits-LOGO-20200115.png"
+                height={50}
+                width={190}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/gYylUtm.png" height={110} width={170} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/waazirx.jpg" height={120} width={170} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/images/grow.83f43714 (1).svg"
+                height={140}
+                width={180}
+                alt="logo"
+              />
+            </Grid>
+
+            <Grid xs={2} sx={{ justifyContent: "space-between" }}>
+              <Image
+                src="/images/appolo.png"
+                height={160}
+                width={170}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/images/Altbalaji_Logo.svg.png"
+                height={160}
+                width={170}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/images/circld.png"
+                height={160}
+                width={170}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/unnamed.jpg" height={160} width={170} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/_upGrad.jpg" height={120} width={170} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/ET(1).jpg" height={140} width={180} alt="logo" />
+            </Grid>
+
+            <Grid xs={2} sx={{ justifyContent: "space-between" }}>
+              <Image
+                src="/images/woveely.jpeg"
+                height={160}
+                width={170}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/cash kro.png" height={50} width={200} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/images/myscoot_l.jpg"
+                height={60}
+                width={190}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/images/HERE_logo.svg.png"
+                height={160}
+                width={170}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/TechGig.com_Logo.png"
+                height={50}
+                width={200}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <h1 height={30} width={50}>
+                 200+ Brands More!
               </h1>
-            </h1>
-            Fullfill your requirement with end-to-end Project Execution from us.
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid
+        </Box> */}
+
+        {/* <Grid
           container
-          direction="column"
-          justifyContent="centre"
+          direction="row"
+          justifyContent="center"
           alignItems="center"
+          sx={{ backgroundColor: "#0b1460", height: 350, padding: 5 }}
         >
-          <Grid item xs={12}>
-            <Button
-              sx={{
-                backgroundColor: "blue",
-                color: "white",
-                zIndex: "-100",
-              }}
-            >
-              <h3>Get Statrted with us </h3>
-              <ArrowForwardSharpIcon />
+          <Grid item xs={8} sx={{ color: "white", height: 250 }}>
+            <h1 style={{ fontSize: "45px" }}>
+              Download the Herody App now  Start your journey of earning money
+            </h1>
+          </Grid>
+          <Grid item xs={4} sx={{ color: "white", paddingLeft: 5 }}>
+            <p>
+             
+              <AlbumOutlinedIcon style={{ color: "green" }} />
+              App is live on Google Play Store
+            </p>
+            <Button variant="contained" endIcon={<SendIcon />}>
+              Download app now
             </Button>
           </Grid>
         </Grid>
 
-        <Grid
-          container
-          direction="column"
-          justifyContent="centre"
-          alignItems="center"
+        <Box
+          sx={{
+            height: 350,
+            color: "#0b1460",
+            backgroundColor: "#f0f4ff",
+            paddingTop: 5,
+          }}
         >
-          <Grid item xs={12}>
-            <Image
-              src="/hero-illustration-two.png"
-              height={900}
-              width={900}
-              alt="logo"
-            />
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="column"
-          justifyContent="centre"
-          alignItems="center"
-        >
-          <Grid item xs={12} sx={{ color: "#0b1460", height: "100" }}>
-            <h1>
-              <h2>Why do businesses work with us?</h2>
-            </h1>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="column"
-          justifyContent="centre"
-          alignItems="center"
-        >
-          <Grid item xs={12} sx={{ color: "blue", height: "100" }}>
-            <h3>
-              {" "}
-              Herody helps brands to get the work done with the distributed
-              workforce and does complete end-to-end execution
-            </h3>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-around"
-          alignItems="center"
-          spacing={3}
-          sx={{ marginTop: 20 }}
-        >
+          <h1 style={{ textAlign: "center" }}>
+            Featured in Media
+          </h1>
           <Grid
-            item
-            xs={3.5}
-            sx={{
-              backgroundColor: "#f0f4ff",
-              borderRadius: 2,
-              color: "grey",
-              height: 180,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image
-              src="/business-report.png"
-              height={60}
-              width={60}
-              alt="logo"
-            />
-            <p>
-              A company that Helps you to <br />
-              eliminate your complex
-              <br /> business requirements
-            </p>
-          </Grid>
-          <Grid
-            item
-            xs={3.5}
-            sx={{
-              backgroundColor: "#f0f4ff",
-              borderRadius: 2,
-              color: "grey",
-              height: 180,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image src="/leader.png" height={60} width={60} alt="logo" />
-            <p>
-              An experienced team that
-              <br />
-              worked with over 300+
-              <br /> brands over a span of 2 years
-            </p>
-          </Grid>
-          <Grid
-            item
-            xs={3.5}
-            sx={{
-              backgroundColor: "#f0f4ff",
-              borderRadius: 2,
-              color: "grey",
-              height: 180,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image src="/images/map.png" height={60} width={60} alt="logo" />
-            <p>
-              We help you take your brand
-              <br /> PAN India without hiring
-              <br /> costs.
-            </p>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-around"
-          alignItems="center"
-          spacing={3}
-          sx={{ marginTop: 5 }}
-        >
-          <Grid
-            item
-            xs={3.5}
-            sx={{
-              backgroundColor: "#f0f4ff",
-              borderRadius: 2,
-              color: "grey",
-              height: 180,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image src="/network.png" height={60} width={60} alt="logo" />
-            <p>
-              Strong ambassador network <br />
-              of 2,00,000+ Gigworkers
-            </p>
-          </Grid>
-          <Grid
-            item
-            xs={3.5}
-            sx={{
-              backgroundColor: "#f0f4ff",
-              borderRadius: 2,
-              color: "grey",
-              height: 180,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image
-              src="/images/pay-per-click.png"
-              height={60}
-              width={60}
-              alt="logo"
-            />
-            <p>
-              We follow the pay-per-
-              <br />
-              output model
-            </p>
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="column"
-          justifyContent="space-around"
-          alignItems="center"
-          spacing={3}
-          sx={{ marginTop: 25 }}
-        >
-          <Grid item xs={12} sx={{ color: "#0b1460", height: 50 }}>
-            <h1>
-              {" "}
-              <h2>Why do Gigworkers work with us?</h2>
-            </h1>
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item xs={12} sx={{ color: "blue", height: 20 }}>
-            <h3>
-              Herody helps gigworkers to start the journey of regular earnings
-              by working remotely. We also help them to get growth opportunities
-              by
-            </h3>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item xs={12} sx={{ color: "blue", height: 20 }}>
-            <h3>enhancing their skillset.</h3>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-around"
-          alignItems="center"
-          spacing={3}
-          sx={{ marginTop: 10 }}
-        >
-          <Grid
-            item
-            xs={2.5}
-            sx={{
-              backgroundColor: "#fff1f9",
-              borderRadius: 2,
-              color: "#0b1460",
-              height: 250,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <h1>
-              <h1>100 k+</h1>
-            </h1>
-            <Typography>Workforce</Typography>
-          </Grid>
-          <Grid
-            item
-            xs={2.5}
-            sx={{
-              backgroundColor: "#fff1f9",
-              borderRadius: 2,
-              color: "#0b1460",
-              height: 250,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <h1>
-              <h2>PAN India</h2>
-            </h1>
-            Presence
-          </Grid>
-          <Grid
-            item
-            xs={2.5}
-            sx={{
-              backgroundColor: "#fff1f9",
-              borderRadius: 2,
-              color: "#0b1460",
-              height: 250,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <h1>
-              <h1>2+</h1>
-            </h1>
-            Years of Operations
-          </Grid>
-          <Grid
-            item
-            xs={2.5}
-            sx={{
-              backgroundColor: "#fff1f9",
-              borderRadius: 2,
-              color: "#0b1460",
-              height: 250,
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <h1>
-              <h1>200+</h1>
-            </h1>
-            Brands
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          spacing={3}
-          sx={{ marginTop: 10 }}
-        >
-          <Grid
-            item
-            xs={12}
-            sx={{
-              backgroundColor: "#f0f4ff",
-              color: "#0b1460",
-              height: "700px",
-
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-          >
-            <h1>
-              <h2> Brands that Trust us </h2>
-            </h1>
-
-            <Image
-              src="/tata_1mg_logo.svg"
-              height="150"
-              width="150"
-              alt="logo"
-            />
-          </Grid>
-        </Grid>
-            <Grid
             container
             direction="row"
             justifyContent="center"
             alignItems="center"
-            >
-              <Grid item xs={12} sx={{backgroundColor:"#0b1460",color:"white" ,
-              height:350,
-             
-              }}>
-                
-                <h1><h2>Download the Herody App now <br/>& Start your journey of earning<br/> money
-                 </h2>
-                 </h1>
-
-
-              </Grid>
+            // spacing={3}
+            sx={{ marginTop: 5, padding: 5 }}
+          >
+            <Grid xs={2} sx={{ justifyContent: "space-between" }}>
+              <Image src="/print.webp" height={50} width={170} alt="logo" />
             </Grid>
-
-            <Grid
-              container
-              direction="column"
-              justifyContent="space-around"
-              alignItems="center"
-              spacing={3}
-              sx={{ marginTop: 20 }}
-              >
-              <Grid xs={12}  sx={{  color: "#0b1460", height: 70 }}>
-              <h1><h2>Featured in Media</h2>
-               </h1>
-              </Grid>
+            <Grid xs={2}>
+              <Image
+                src="/tobo-white (1).png"
+                // /tobo-white (1).png"
+                height={50}
+                width={170}
+                alt="logo"
+                style={{ backgroundColor: "black" }}
+              />
             </Grid>
-
+            <Grid xs={2}>
+              <Image
+                src="/IANS-logo-6.png"
+                height={50}
+                width={190}
+                alt="logo"
+              />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/lpg.png" height={50} width={200} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/mix.png" height={60} width={150} alt="logo" />
+            </Grid>
+            <Grid xs={2}>
+              <Image src="/unnamed.jpg" height={160} width={160} alt="logo" />
+            </Grid>
+          </Grid>
+        </Box> */}
       </Layout>
     </>
-  )
+  );
 }
 
 {
-}
+} 
