@@ -14,7 +14,8 @@ const Footer = () => {
         direction="row"
         justifyContent="start"
         alignItems="center"
-        sx={{margin:4}}
+        sx={{padding:4}}
+        id="about"
       >
         <Grid
           item
@@ -58,11 +59,11 @@ const Footer = () => {
             <h2>Contact Us</h2>
             <h3>Phone Number </h3>
            
-            <PhoneIcon  />
+            <PhoneIcon style={{display:"inline", color:"blue" }} />
             <h3 style={{display:"inline", color:"blue" }}>02269124061</h3>
 
             <h3 > Email Address</h3>
-            <MailRoundedIcon  />
+            <MailRoundedIcon style={{display:"inline",color:"blue"}}  />
             <h3 style={{display:"inline",color:"blue"}}> help@herody.in</h3>
            
           </Grid>
@@ -99,7 +100,7 @@ const Footer = () => {
         justifyContent="centre"
         alignItems="center"
       >
-        <Grid item xs={12} sx={{ color: "#0b1460", height: 80 }}>
+        <Grid item xs={12} sx={{ backgroundColor:" #f6f9fb", color: "#0b1460", height: 100 }}>
           <Grid item>
             <h4>Copyright @2022 sHerody. All Right Reserved.</h4>
           </Grid>

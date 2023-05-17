@@ -47,3 +47,227 @@
   .mainBg{
     background-image: url();
   } */
+
+  .cp{
+    cursor: pointer;
+  }
+
+  
+
+
+
+ .bullet{
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background-color: blue;
+  display:inline-block;
+  /* margin:10px; */
+  /* marginTop */
+ }
+
+
+
+ .my{
+  height:190px;
+  width:190px;
+  background-color:white;
+  border-radius: 90px 5px 90px 90px;
+}
+.my:hover{
+  background-color:ffffab;
+  width:183px;
+  height:183px;
+  box-shadow: 15px 20px 5px lightblue;
+}
+
+.in{
+  padding-top:1px;
+  height:60px;
+  width:60px;
+  border-radius:45px;
+  background-color:blue;
+  text-align:center;
+}
+
+/* .Login{
+  color: blue;
+}
+
+.Login:hover{
+  color:white;
+  font-weight: bold;
+} */
+
+
+/* Login:hover {
+  background-color: yellow;
+  font-weight: bold; 
+  box-Shadow:2px  solid red;
+} */
+
+
+
+
+/* 
+<Grid item xs={3}>
+{" "}
+<div class="my">
+  <div class="in">01</div>
+</div>
+</Grid>
+<Grid item xs={3}>
+{" "}
+<div class="my">
+  <div class="in">01</div>
+</div>
+</Grid>
+<Grid item xs={3}>
+<div class="my">
+  <div class="in">01</div>
+</div>{" "}
+</Grid>
+<Grid item xs={3}>
+{" "}
+<div class="my">
+  <div class="in">01</div>
+</div>
+</Grid>  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+ <Grid
+              container
+              direction="row"
+              justifyContent="space-between"
+              alignItems="center"
+              sx={{ padding: 5 }}
+            > 
+              {/* <Grid item xs={4} sx={{ height: 300, width: 300 }}>
+                <Image src="/mark.jpg" height={280} width={340} alt="logo" />
+              </Grid>
+              <Grid item xs={4} sx={{ height: 300, width: 300 }}>
+                <Image
+                  src="/operation.jpg"
+                  height={280}
+                  width={340}
+                  alt="logo"
+                />
+              </Grid>
+              <Grid item xs={4} sx={{ height: 300, width: 300 }}>
+                <Image
+                  src="/reaserch.jpg"
+                  height={280}
+                  width={340}
+                  alt="logo"
+                />
+              </Grid> *
+
+              /* <Grid
+                container
+                direction="row"
+                justifyContent="space-around"
+                alignItems="center"
+                spacing={4}
+              >
+                <Grid
+                  item
+                  xs={4}
+                  sx={{
+                    color: "#0b1460",
+                    backgroundColor: "yellow",
+                  }}
+                > */
+                  /* <h1>Brand Marketing</h1>
+
+                  <p>
+                    Reach out to the audience to increase <br />
+                    brand awareness via various activities
+                  </p>
+                  <p>
+                    <AlbumIcon /> Campus Activation
+                  </p>
+                  <p>
+                    <AlbumIcon /> Social Media Engagement
+                  </p>
+                  <p>
+                    <AlbumIcon /> Product Sampling
+                  </p>
+                  <p>
+                    <AlbumIcon /> User Acquisition
+                  </p>
+                  <p>
+                    <AlbumIcon /> Influencer Marketing
+                  </p> */
+                /* </Grid>
+                <Grid
+                  item
+                  xs={4}
+                  sx={{
+                    color: "#0b1460",
+                    backgroundColor: "red",
+                  }}
+                > */
+                  /* <h1>Business Development & Operations</h1>
+                  <p>
+                    Optimize the cost of your Business
+                    <br /> Development with pay per outcome
+                    <br /> model
+                  </p>
+                  <p>
+                    <AlbumIcon /> Telecalling
+                  </p>
+                  <p>
+                    <AlbumIcon /> Vendor Acquisition
+                  </p>
+                  <p>
+                    <AlbumIcon /> Merchant Onboarding
+                  </p>
+                  <p>
+                    <AlbumIcon /> Data Entry
+                  </p>
+                  <p>
+                    <AlbumIcon /> Field Sales
+                  </p>
+                  <p>
+                    <AlbumIcon /> Content & Data Operations
+                  </p>
+                  <p>
+                    <AlbumIcon /> Transcription
+                  </p> */
+                /* </Grid>
+                <Grid
+                  item
+                  xs={4}
+                  sx={{
+                    color: "#0b1460",
+                    backgroundColor: "white",
+                  }}
+                > */
+                  /* <h1>Auditing & Market Research</h1>
+                  <p>
+                    {" "}
+                    <AlbumIcon /> Mystery Audit
+                  </p>
+                  <p>
+                    <AlbumIcon /> Online Survey
+                  </p>
+                  <p>
+                    {" "}
+                    <AlbumIcon /> Market Research
+                  </p> */
+                /* </Grid>
+              </Grid>
+            </Grid> */ 
